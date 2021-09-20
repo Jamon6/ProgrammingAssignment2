@@ -2,6 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
+This function can calculate the value/ mean of the vector. 
+First of all, it is checked whether this vector has already been calculated.
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -16,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+With this function I create a matrix that can cache its inverse.
+        
 cacheSolve <- function(x, ...) {
         inv <- x$getInverse()
         if(!is.null(inv)){
